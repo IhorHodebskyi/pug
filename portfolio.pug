@@ -1,5 +1,7 @@
 extends base
-
+include mixin
+block vars 
+ - var siteTitle = "My Site"
 
 block content
   include header
@@ -7,5 +9,4 @@ block content
   .blok. 
     HJJHLSDLB SJNDBLDSBV
   p This is a paragraph with some text in
-  ul
-    li clscc
+  +svg("icon-10")

@@ -1,2 +1,12 @@
-header.header 
-    |heder
+- var text = "Hi world";
+- var menuNav = ["О нас", "Робота", "Силки"];
+
+header.header
+    if text
+        p #{text}
+    else
+        p Content
+    nav.nav 
+        ul
+            each value in  menuNav  
+                li #{value}
