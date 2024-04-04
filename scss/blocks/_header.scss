@@ -1,0 +1,60 @@
+body {
+  background: #f0f0f0;
+  font-family: sans-serif;
+}
+
+.message {
+  width: 600px;
+  margin: 30px auto;
+  border: 1px solid #dcdcdc;
+  border-radius: 5px;
+  padding: 15px;
+  background: white;
+
+  .from {
+    font-size: 120%;
+    font-weight: bold;
+
+    &::before {
+      content: "От: ";
+      color: #868686;
+    }
+  }
+
+  hr {
+    border: none;
+    border-bottom: 1px solid #eaeaea;
+    margin: 10px 0;
+  }
+
+  &--important {
+    background: #fff0f0;
+    border-color: #f0c1c1;
+    hr {
+      border-color: #f0c1c1;
+    }
+  }
+}
+
+$myVar: true;
+
+@for $i from 1 to 4 {
+  .class--#{$i} {
+    color: red;
+  }
+}
+$array: green, yellow, red;
+
+@each $color in $array {
+  p.color--#{$color} {
+    color: $color;
+  }
+}
+
+$buttonColor: "primary" blue, "error" red, "success" green;
+
+@each $key, $color in $buttonColor {
+  button.btn--#{$key} {
+    background-color: $color;
+  }
+}
