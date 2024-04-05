@@ -1,0 +1,26 @@
+body {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  justify-content: center;
+  align-items: center;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.content-wrapper {
+  width: 1024px;
+  text-align: center;
+}
+
+blockquote {
+  font-style: italic;
+  color: #464646;
+}
+
+.age {
+  position: relative;
+  top: -13px;
+  font-size: 45%;
+  color: #646464;
+  cursor: help;
+}

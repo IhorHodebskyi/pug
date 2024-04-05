@@ -1,0 +1,11 @@
+doctype html
+html
+    head
+        meta(charset="UTF-8")
+        title= name
+        link(href="../style.css" rel="stylesheet")
+    body 
+        .content-wrapper
+            h2 #{name} #[span.age=age(birth)]
+            blockquote= slogan 
+            p= bio
