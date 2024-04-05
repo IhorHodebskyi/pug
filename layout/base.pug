@@ -1,0 +1,13 @@
+doctype html
+html
+    head
+        meta(charset="UTF-8")
+        title= base.title
+        link(rel="stylesheet", href="../style.css")
+    body(class=base.pageClass)
+        include include/header
+
+        .content-wrapper
+            block content
+
+        include include/footer
